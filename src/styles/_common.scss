@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body {
+  background: $color-bg-main;
+  font-family: $font-family-secondary;
+}
+
+h1 {
+  font-family: $font-family-main;
+  font-weight: normal;
+  font-size: 144px;
+  text-transform: lowercase;
+}
+
+.logo {
+  &__text {
+    font-family: $font-family-main;
+    font-weight: bold;
+  }
+
+  &__subtext {
+    font-family: $font-family-secondary;
+    font-size: 16px;
+  }
+}
+
+.banner{
+  background: linear-gradient(180deg, rgba(51, 37, 16, 0) 71.35%, rgba(7, 5, 3, 0.7) 100%), #323232;
+  padding: 1em 0.5em  0;
+  &__text{
+    color: $color-text-light;
+  }
+}
+
+.steps{
+  display: flex;
+  justify-content: space-between;
+
+  &__item{
+    flex-basis: 300px
+  }
+
+  &__text{
+    font-size: 14px;
+    line-height: 1.75;
+    letter-spacing: 0.015em;
+    text-align: left;
+  }
+
+  &__title{
+    background: #ffffff;
+    box-shadow: 0 22px 42px rgba(33, 33, 33, 0.05);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: right;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+

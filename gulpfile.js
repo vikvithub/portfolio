@@ -20,15 +20,15 @@ const
     rev = require('gulp-rev'), //set hashes to filename (to avoid caching old style for users)
     uglify = require('gulp-uglify');
 
-const sassFiles = ['src/styles/**/*.sass'];
-const templatesFiles = ["./src/templates/**/index.pug"];
+const sassFiles = ['src/styles/**/*.scss'];
+const templatesFiles = ["./src/templates/**/*.pug"];
 const imageFiles = ["src/images/**/*"];
 const javascriptFiles = ["src/js/**/*.js"];
 
 const isLive = process.env.NODE_ENV === 'live';
 
 function buildPug() {
-    return src(templatesFiles)
+    return src('./src/index.pug')
         .pipe(plumber({
             errorHandler: notify.onError() // error handler has each next stream
         }))
