@@ -1,0 +1,26 @@
+section.project
+    div.container
+        header.project__header.summary
+            div
+                h1.summary__title=project.name
+                h2.summary__subtitle=project.subtitle
+            ul.summary__list
+                each activity in project.activities
+                    li.summary__list-item=activity
+        div.project__hero.banner
+        div.project__about.about
+            h3.about__title=project.about-title
+            p.about__text=project.about-text
+        div.project__gallery
+        div.project__testemonials.testemonials
+            p.testemonials__quote
+        div.project__actvivities.activities
+            h2.activities__title
+            ul.activities__steps.steps
+                li.steps__item
+                    p.steps__text When a problem is clear I'll research users and best design practices. If problems are unclear, I'll research the company to write a realistic and positive design brief.
+                li.steps__item
+                    p.steps__text After research, I'll set the information architecture and present it in wireframes.
+                li.steps__item
+                    p.steps__text I can do the visual design myself and create interactive prototypes (the most fun part).
+
