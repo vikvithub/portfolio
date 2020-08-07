@@ -1,18 +1,39 @@
 section.project
-    div.container
         header.project__header.summary
-            div
-                h1.summary__title=project.name
-                h2.summary__subtitle=project.subtitle
-            ul.summary__list
-                each activity in project.activities
-                    li.summary__list-item=activity
-
+            div.container.justify-content
+                div
+                    h1.summary__title Lexi
+                    p.summary__subtitle Free mobile application
+                ul.summary__lists
+                    li.summary__list-item illistrations
+                    li.summary__list-item ux/ui design
+                    li.summary__list-item brand strategy
         div.project__hero.banner
-        div.project__about.about
-            h3.about__title=project.about-title
-            p.about__text=project.about-text
-        div.project__gallery
-        div.project__testemonials.testemonials
-            p.testemonials__quote
-
+        section.project__about.about
+            div.container.justify-content
+                h2.about__title About application
+                p.about__text The mobile application is called Lexi and will help users to study words at its MVP stage.After depending on demand it will most likely evolve into content aggregator with possible grammar lessons.
+        div.container.justify-content
+            div.project__gallery
+                img(src="./assets/images/img.lexi.4.png" alt="Application")
+                img(src="./assets/images/img.lexi.4.png" alt="Application")
+                img(src="./assets/images/img.lexi.4.png" alt="Application")
+                img(src="./assets/images/img.lexi.4.png" alt="Application")
+        section.project__activities.activities
+            div.container
+                h2.activities__title Top 3 most common application problems and solutions
+                ul.steps
+                    li.steps__item
+                        p.steps__text <strong>Issue 1.</strong>  Motivation battery low.
+                        p.steps__text <strong>Fix.</strong> I decided to use gamification for this application in order to awaken the spirit of competition among users. Thus, the points won for the completed task motivated the user to continue their journey of learning English.
+                    li.steps__item
+                        p.steps__text <strong>Issue 2.</strong> No structure. Don't know where to start, I would like to have a clear plan for learning English
+                        p.steps__text <strong>Fix.</strong> I decided to use gamification for this application in order to awaken the spirit of competition among users. Thus, the points won for the completed task motivated the user to continue their journey of learning English.
+                    li.steps__item
+                        p.steps__text <strong>Issue 3.</strong> The issue of accessibility of training materials.
+                        p.steps__text <strong>Fix.</strong> I have created the perfect simple plan for learning English. This is not a trivial theory with boring examples. You will have the opportunity to read and watch videos in English, take simple lessons on learning and memorizing words.
+        section.project__testemonials.testemonials
+            p.testemonials__quote "Very satisfied with the app. Viktoriia made it very trandy and with cool illustrations. She listened to my needs very well."
+        div.next
+            h1.next__title Next
+            p.next__subtitle work

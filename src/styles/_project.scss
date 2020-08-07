@@ -1,5 +1,91 @@
 .project{
-  &__header{
+  &__gallery{
+    //todo:implement dynamic styles
+    text-align: center;
+    padding: 2.5em;
+    background: map_get($colors-projects, 'lexi');
+  }
 
+  &__hero{
+    //todo dynamically add picture
+    width: 100%;
+    min-height: 545px;
+    background-image: url("../images/img.lexi.0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__activities{
+    padding: 5em 0;
+  }
+
+  &__activities .activities__title{
+    text-align: left;
+  }
+
+}
+
+.summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 0;
+
+  &__title{
+    font-size: 92px;
+    text-transform: capitalize;
+    letter-spacing: 0.015em;
+    font-weight: bold;
+  }
+  &__subtitle{
+    font-size: 32px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.about{
+  padding: 15em 0 10em;
+  &__title{
+    font-size: 32px;
+    align-self: flex-start;
+  }
+
+  &__text{
+    max-width: 455px;
+
+  }
+}
+
+.next{
+  //todo: implement dynamic style changing
+  background: map_get($colors-projects, 'np');
+  text-align: center;
+  padding: 2em;
+
+  &__title{
+    @include stroke(1, $color-text-light );
+    color: map_get($colors-projects, 'np');
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+  }
+
+  &__subtitle{
+    color: $color-text-light;
+  }
+}
+
+.testemonials{
+  //todo:implement dynamic styles
+  background: map_get($colors-projects, 'lexi');
+
+  &__quote{
+    padding: 12em 0;
+    margin: 0 auto;
+    max-width: 330px;
+    color: $color-text-light;
+    font-size: 14px;
+    line-height: 1.75;
+    letter-spacing: 0.015em;
   }
 }

@@ -4,20 +4,25 @@
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
 body {
   background: $color-bg-main;
   font-family: $font-family-secondary;
+  letter-spacing: 0.015em;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: $font-family-main;
 }
 
 h1 {
-  font-family: $font-family-main;
-  font-weight: normal;
-  font-size: 144px;
+  font-size: 10em;
   text-transform: lowercase;
+  font-weight: normal;
 }
 
 .logo {
@@ -32,30 +37,31 @@ h1 {
   }
 }
 
-.banner{
+.banner {
   background: linear-gradient(180deg, rgba(51, 37, 16, 0) 71.35%, rgba(7, 5, 3, 0.7) 100%), #323232;
-  padding: 1em 0.5em  0;
-  &__text{
+  padding: 1em 0.5em 0;
+
+  &__text {
     color: $color-text-light;
   }
 }
 
-.steps{
+.steps {
   display: flex;
   justify-content: space-between;
 
-  &__item{
+  &__item {
     flex-basis: 300px
   }
 
-  &__text{
+  &__text {
     font-size: 14px;
     line-height: 1.75;
     letter-spacing: 0.015em;
     text-align: left;
   }
 
-  &__title{
+  &__title {
     background: #ffffff;
     box-shadow: 0 22px 42px rgba(33, 33, 33, 0.05);
     padding: 1em;
@@ -65,4 +71,3 @@ h1 {
     font-size: 24px;
   }
 }
-
