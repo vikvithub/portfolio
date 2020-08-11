@@ -1,0 +1,113 @@
+-
+    let pageTitle = 'My portfolio: Lexi';
+    let project = {
+        title: 'Lexi',
+        summarySubtitle: 'Free mobile applicationi',
+        summaryList: ['illistrations', 'ux/ui design', 'brand strategy'],
+        about: {
+            title: 'About application',
+            text: 'The mobile application is called Lexi and will help users to study words at its MVP stage.' +
+                    'After depending on demand it will most likely evolve into content aggregator with possible' +
+                    ' grammar lessons.'
+        },
+        images: [
+            './assets/images/img.lexi.2.png',
+            './assets/images/img.lexi.3.png',
+            './assets/images/img.lexi.4.png',
+            './assets/images/img.lexi.5.png'
+        ],
+        activities: {
+            title: 'Top 3 most common application problems and solutions',
+            steps: [
+                [
+                    [
+                        {
+                            title: 'Issue 1. ',
+                            text: 'Motivation battery low'
+                        }
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: 'I decided to use gamification for this application in order ' +
+                                    'to awaken the spirit of competition among users. Thus, the points won' +
+                                    'for the completed task motivated the user to continue their journey of learning English.'
+                        }
+                    ]
+                ],
+                [
+                    [
+                        {
+                            title: 'Issue 2. ',
+                            text: 'No structure. Don\'t know where to start, I would like to have a clear plan for learning English'
+                        }
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: ' I decided to use gamification for this application in order to awaken the spirit of competition among ' +
+                                    'users. Thus, the points won for the completed task motivated the user to continue their journey of learning English.'
+                        }
+
+                    ]
+                ],
+                [
+                    [
+                        {
+                            title: 'Issue 3.',
+                            text: 'The issue of accessibility of training materials.'
+
+                        },
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: 'I have created the perfect simple plan for learning English. ' +
+                                    'This is not a trivial theory with boring examples. ' +
+                                    'You will have the opportunity to read and watch videos in English, ' +
+                                    'take simple lessons on learning and memorizing words.'
+                        }
+                    ]
+                ]
+            ]
+        },
+        testimonials: {
+            quote: '"Very satisfied with the app. Viktoriia made it very trandy and with cool illustrations. ' +
+                    'She listened to my needs very well."',
+            author: 'V.Zavalykhatko',
+            authorLink: 'https://www.linkedin.com/in/vladyslav-zavalykhatko-415331a9/'
+        },
+
+        prototypes:[
+            './assets/images/img.lexi.6.png',
+            './assets/images/img.lexi.1.png'
+        ],
+        next:{
+            text: 'Next',
+            link: '/np.html'
+        }
+    };
+
+
+DOCTYPE(html)
+html(lang="en")
+head
+    include ../templates/head
+    style(type='text/css').
+        :root {
+            --hero-img-url: url('../images/imgLexi.1.png');
+            --main-color: #0F6A79;
+            --next-color: #E24E27;
+        }
+body
+    include ../templates/header
+    main(id='content')
+        section.project
+            include ../templates/project-header
+            include ../templates/project-hero
+            include ../templates/project-about
+            include ../templates/project-gallery
+            include ../templates/project-activities
+            include ../templates/project-testemonials
+            include ../templates/project-prototypes
+            include ../templates/project-next

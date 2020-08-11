@@ -1,0 +1,10 @@
+div.container.justify-content
+    div.project__gallery.project__gallery--secondary.bullet-points
+        if project.bulletPointsTitle
+            p.bullet-points__title=project.bulletPointsTitle
+            div.bullet-points__icons
+                each item in project.bulletPoints
+                    div
+                        img.bullet-points__img(src=`${item.icon}` alt="Application")
+                        p.bullet-points__text=item.text
+

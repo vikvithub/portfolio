@@ -1,0 +1,76 @@
+-
+    let pageTitle = 'My portfolio: SOS';
+    let project = {
+        title: '112',
+        summarySubtitle: 'Mobile application',
+        summaryList: ['brand strategy', 'ux/ui design'],
+        about: {
+            title: 'About application',
+            text: 'A common goal: Design a mobile app for emergency call assistance.' +
+                    'Using the application you can find a solution to problems with plumbing, electrical appliances, ' +
+                    'get acquainted with the rules of first aid, consult with the operator in emergency situations.'
+        },
+        aboutSecondary:{
+            title: 'Test our application',
+            text: 'Red color is associated with a call for help, SOS. Green is life and safety. The “call” ' +
+                    'icon displays an outgoing emergency call. Tex-prompt for the user about what is ' +
+                    'happening on the scree.'
+        },
+        images: [
+            './assets/images/img.112.2.png',
+            './assets/images/img.112.4.png',
+            './assets/images/img.112.5.png',
+            './assets/images/img.112.3.png',
+        ],
+
+        bulletPoints:[
+            {
+                text: 'User',
+                icon: './assets/images/icon-sos-bullet-1.svg'
+            },
+            {
+                text: 'Mobile app',
+                icon: './assets/images/icon-sos-bullet-2.svg'
+            },
+            {
+                text: 'Support',
+                icon: './assets/images/icon-sos-bullet-3.svg'
+            },
+            {
+                text: 'Help is on the way',
+                icon: './assets/images/icon-sos-bullet-4.svg'
+            },
+
+        ],
+
+        bulletPointsTitle: 'User interection',
+        next: {
+            text: 'Next',
+            link: '/wave-box.html'
+        }
+    };
+
+
+DOCTYPE(html)
+    html(lang="en")
+    head
+        include ../templates/head
+        style(type='text/css').
+            :root {
+                --hero-img-url: url('../images/img.112.1.jpg');
+                --main-color: #D93636;
+                --secondary-color: #009999;
+                --next-color: #B7099E;
+            }
+    body
+        include ../templates/header
+        main(id='content')
+            section.project
+                include ../templates/project-header
+                include ../templates/project-hero
+                include ../templates/project-about
+                include ../templates/project-gallery
+                include ../templates/project-bulletPoints
+                include ../templates/project-aboutSecondary
+                include ../templates/project-next
+

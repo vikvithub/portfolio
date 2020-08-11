@@ -1,0 +1,103 @@
+-
+    let pageTitle = 'My portfolio: Nova Poshta';
+    let project = {
+        title: 'Nova poshta',
+        summarySubtitle: 'Redesign',
+        summaryList: ['illistrations', 'ux/ui design'],
+        about: {
+            title: 'Maybe you don\'t know what is it...',
+            text: 'Nova Poshta - is a private Ukrainian postal and courier company that provides express delivery of ' +
+                    'documents, freight and parcels for individuals and businesses.'
+        },
+        images: [
+            './assets/images/img.Novaposhta.4.png',
+        ],
+        imagesTitle: 'Current page',
+        imagesSecondary:[
+            './assets/images/img.Novaposhta.5.png'
+        ],
+        imagesSecondaryTitle: 'New design',
+        activities: {
+            title: 'What needed to be fixed',
+            steps: [
+                [
+                    [
+                        {
+                            title: 'Issue 1. ',
+                            text: 'The website design is outdated is overloaded with red.'
+                        }
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: 'Updated and modern design. Giving the site an original style.'
+                        }
+                    ]
+                ],
+                [
+                    [
+                        {
+                            title: 'Issue 2. ',
+                            text: 'Inconvenience of use. The site is full of irrelevant information.' +
+                                    ' A lot of additional information that can be hidden in a separate section of the menu.',
+                        }
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: 'I got rid of unnecessary content, made the navigation of the site convenient and understandable.'
+
+                        }
+                    ]
+                ],
+                [
+                    [
+                        {
+                            title: 'Issue 3. ',
+                            text: 'Important elements, such as: the search for the parcel and the status of the goods' +
+                                    ' should be in the user\'s field of vision - this is exactly what the user is interested' +
+                                    'in on the sites of the delivery service.'
+                        }
+                    ],
+                    [
+                        {
+                            title: 'Fix. ',
+                            text: 'I didn\'t want to overload the site, so on the main page, the user can check the' +
+                                    ' order status, find the desired branch, leave or read a review in one click.'
+                        }
+
+
+                    ]
+                ]
+            ]
+        },
+        next: {
+            text: 'Next',
+            link: '/sos.html'
+        }
+    };
+
+
+DOCTYPE(html)
+    html(lang="en")
+    head
+        include ../templates/head
+        style(type='text/css').
+            :root {
+                --hero-img-url: url('../images/imgNovaPoshta.1.png');
+                --main-color: #E5603D;
+                --secondary-color: #232A4C;
+                --next-color: #D93636;
+            }
+    body
+        include ../templates/header
+        main(id='content')
+            section.project
+                include ../templates/project-header
+                include ../templates/project-hero
+                include ../templates/project-about
+                include ../templates/project-gallery
+                include ../templates/project-gallerySecondary
+                include ../templates/project-activities
+                //todo:add prototypes template
+                include ../templates/project-next

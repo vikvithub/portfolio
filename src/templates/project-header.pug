@@ -1,0 +1,8 @@
+header.project__header.summary
+    div.container.justify-content
+        div
+            h1.summary__title=project.title
+            p.summary__subtitle=project.summarySubtitle
+        ul.summary__lists
+            each item in project.summaryList
+                li.summary__list-item=item

@@ -1,0 +1,11 @@
+section.project__activities.activities
+    div.container
+        h2.activities__title=project.activities.title
+        ul.steps
+            each step in project.activities.steps
+                li.steps__item
+                    each point in step
+                        p.steps__text
+                            each item in point
+                                span=item.title
+                                span=item.text

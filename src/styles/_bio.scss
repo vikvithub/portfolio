@@ -1,5 +1,6 @@
 .bio {
   padding: 4em 0;
+
   &__image {
     position: relative;
   }
@@ -23,14 +24,17 @@
 
   &__summary{
     position: absolute;
-    width: 592PX;
+    width: 536px;
+    top: 50%;
     background: #ffffff;
     padding: 2em 4em;
-    left: -4em;
-
+    left: -7em;
   }
 
   &__contact{
-    align-self: end;
+    margin:  1em 3em;
+    width: 536px;
+    position: absolute;
+    bottom: 0;
   }
 }

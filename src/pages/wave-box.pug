@@ -1,0 +1,66 @@
+-
+	let pageTitle = 'My portfolio: Wave Box';
+	let project = {
+		title: 'Wave you box',
+		summarySubtitle: 'Website for digital-marketing company',
+		summaryList: ['brand strategy', 'ux/ui design'],
+		about: {
+			title: 'About website',
+			text: 'The site was developed for a digital marketing company in the pharmaceutical and medical field.\n' +
+					'For this site I used the AIDA principle. I decided to attract potential buyers of the product with ' +
+					'a bright design, in which there is a lot of air, ' +
+					'to interest them in pictures and give more information about our product.'
+		},
+		aboutSecondary: {
+			title: 'The first design',
+			text: 'I started designing with a hypothesis - more information about the product will encourage more people to contact' +
+					' "Wave you box". \n The first idea that came to my mind was to make a website that would show products' +
+					' from which vitamins are made, but after discussing with the customers again, we came to the conclusion' +
+					' that we need to make a super light and delicate design for the site.We selectedthe mainand accentcolor,' +
+					'the combinationof fonts,resultingin anairy anddelicate website.'
+		},
+		images: [
+			'./assets/images/img.waveyoubox.3.jpg'
+		],
+
+		testimonials: {
+			quote: 'The website represents the main goal that the client wanted - the site is filled with air' +
+					'and lightness, like a person who takes vitamins is full of strength, energy and beauty. ' +
+					'We have adapted the principle of mobility during' +
+					' the development process to meet the needs of most of our users.',
+			author: '',
+			authorLink: ''
+		},
+		prototypes: [
+				'../assets/images/imgWaveBox-prototype.png'
+		],
+		next: {
+			text: 'Next',
+			link: '/tours.html'
+		}
+	};
+
+DOCTYPE(html)
+	html(lang="en")
+	head
+		include ../templates/head
+		style(type='text/css').
+			:root {
+				--hero-img-url: url('../images/imgWaveBoxBanner.jpg');
+				--main-color: #B7099E;
+				--next-color: #FF9900;
+			}
+	body
+		include ../templates/header
+		main(id='content')
+			section.project
+				include ../templates/project-header
+				include ../templates/project-hero
+				include ../templates/project-about
+				include ../templates/project-gallery
+				include ../templates/project-aboutSecondary
+				include ../templates/project-testemonials
+				include ../templates/project-next
+
+
+

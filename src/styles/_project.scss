@@ -1,16 +1,27 @@
 .project{
   &__gallery{
-    //todo:implement dynamic styles
+    margin-bottom: 4em;
+    width: 100%;
     text-align: center;
     padding: 2.5em;
-    background: map_get($colors-projects, 'lexi');
+    background: var(--main-color);
+    color: $color-text-light;
+    font-size: 1.25em;
+    line-height: 4em;
+  }
+
+  &__gallery > *{
+    width: 50%;
+  }
+
+  &__gallery--secondary{
+    background: var(--secondary-color);
   }
 
   &__hero{
-    //todo dynamically add picture
     width: 100%;
     min-height: 545px;
-    background-image: url("../images/img.lexi.0.png");
+    background-image: var(--hero-img-url);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -20,9 +31,13 @@
   }
 
   &__activities .activities__title{
+    margin: 0 0 2em;
     text-align: left;
   }
 
+  &__prototype{
+    padding: 5em 0;
+  }
 }
 
 .summary{
@@ -44,8 +59,10 @@
 }
 
 .about{
-  padding: 15em 0 10em;
+  padding: 10em 0;
+
   &__title{
+    max-width: 35%;
     font-size: 32px;
     align-self: flex-start;
   }
@@ -57,14 +74,14 @@
 }
 
 .next{
-  //todo: implement dynamic style changing
-  background: map_get($colors-projects, 'np');
+  display: block;
+  background: var(--next-color);
   text-align: center;
   padding: 2em;
 
   &__title{
     @include stroke(1, $color-text-light );
-    color: map_get($colors-projects, 'np');
+    color: var(--next-color);
     text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.015em;
@@ -76,16 +93,50 @@
 }
 
 .testemonials{
-  //todo:implement dynamic styles
-  background: map_get($colors-projects, 'lexi');
+  width: 100%;
+  padding: 12em 0;
+  background: var(--main-color);
+  color: $color-text-light;
+  font-size: 1em;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
 
-  &__quote{
-    padding: 12em 0;
-    margin: 0 auto;
+  &__quote,
+  &__author{
+    display: block;
     max-width: 330px;
-    color: $color-text-light;
-    font-size: 14px;
-    line-height: 1.75;
-    letter-spacing: 0.015em;
+    margin: 0 auto;
+
+  }
+  &__author{
+    text-decoration: underline;
+  }
+}
+
+.bullet-points{
+  padding: 5em;
+
+  &__title{
+    width: 100%;
+    margin: 1em auto;
+    font-family: $font-family-main;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  &__icons{
+    width: 75%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img{
+
+  }
+
+  &__text{
+
   }
 }

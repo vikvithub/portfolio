@@ -1,0 +1,62 @@
+-
+    let pageTitle = 'My portfolio: Tours';
+    let project = {
+        title: 'World tours',
+        summarySubtitle: 'Website for Travel Agency',
+        summaryList: ['ux/ui design','brand strategy'],
+        about: {
+            title: 'About application',
+            text: 'Traveling is the best type of vacation for many of us, the best way to have a good vacation, free time. ' +
+                    'The easiest way is to buy a ready-made tour (package tour), which already includes ' +
+                    'plane tickets (train), transfer and hotel accommodation. Our site will satisfy any of your desires.'
+        },
+        images: [
+            './assets/images/img.worldtours.1.png'
+        ],
+        imagesSecondary: [
+            './assets/images/img.worldtours.2.png'
+        ],
+        testimonials: {
+            quote: 'This project is still under development. In the future, I would like to adapt the website for mobile' +
+                    ' and design a mobile application.' +
+                    ' Because, the topic of recreation is always relevant, and the demand for this product is always relevant.',
+            author: '',
+            authorLink: ''
+        },
+        prototypes:[
+            './assets/images/imgTours-prototype-1.png',
+            './assets/images/imgTours-prototype-2.png'
+
+        ],
+        next: {
+            text: 'Contact',
+            link: '/contact.html'
+        }
+    };
+
+DOCTYPE(html)
+    html(lang="en")
+    head
+        include ../templates/head
+    body
+        include ../templates/header
+        style(type='text/css').
+            :root {
+                --hero-img-url: url('../images/img.worldtours.8.jpg');
+                --main-color: #232A4C;
+                --secondary-color: #FF9900;
+                --next-color: #D93636;
+            }
+        main(id='content')
+            section.project
+                include ../templates/project-header
+                include ../templates/project-hero
+                include ../templates/project-about
+                include ../templates/project-gallery
+                include ../templates/project-gallerySecondary
+                include ../templates/project-testemonials
+                include ../templates/project-prototypes
+                include ../templates/project-next
+
+
+
