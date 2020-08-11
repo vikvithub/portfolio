@@ -8,6 +8,7 @@ const
     newer = require('gulp-newer'), // checks dist directory, returns only new obj to pipeline
     plumber = require('gulp-plumber'), // for merging streams, has own "pipe" method
     autoprefixer = require('gulp-autoprefixer'),
+    data = require('gulp-data')
 
     /*-----------DEVELOPMENT----------------*/
     notify = require('gulp-notify'),
@@ -21,6 +22,7 @@ const
     uglify = require('gulp-uglify');
 
 const sassFiles = ['src/styles/**/*.scss'];
+const pagesFiles = ['src/pages/**/*.pug']
 const templatesFiles = ["./src/templates/**/*.pug"];
 const imageFiles = ["src/images/**/*"];
 const javascriptFiles = ["src/js/**/*.js"];
@@ -28,11 +30,12 @@ const javascriptFiles = ["src/js/**/*.js"];
 const isLive = process.env.NODE_ENV === 'live';
 
 function buildPug() {
-    return src('./src/index.pug')
+    return src(pagesFiles)
         .pipe(plumber({
             errorHandler: notify.onError() // error handler has each next stream
         }))
         .pipe(gulpIf(!isLive, sourcemaps.init()))
+        .pipe(data(file =>  { require }))
         .pipe(pug())
         .pipe(htmlmin())
         .pipe(gulpIf(!isLive, sourcemaps.write()))
@@ -86,6 +89,7 @@ function serve() {
     browserSync.watch('./dist/**/*.*').on('change', browserSync.reload);
 
     watch(templatesFiles, buildPug);
+    watch(pagesFiles, buildPug);
     watch(sassFiles, buildSass);
     watch(imageFiles, image);
     watch(javascriptFiles, javascript);
