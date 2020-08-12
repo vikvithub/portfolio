@@ -26,6 +26,7 @@ const pagesFiles = ['src/pages/**/*.pug']
 const templatesFiles = ["./src/templates/**/*.pug"];
 const imageFiles = ["src/images/**/*"];
 const javascriptFiles = ["src/js/**/*.js"];
+const otherFiles =  ["src/files/**/*"];
 
 const isLive = process.env.NODE_ENV === 'live';
 
@@ -66,6 +67,11 @@ function image() {
         .pipe(dest('./dist/assets/images/'))
 }
 
+function files(){
+    return src(files)
+        .pipe(dest('./dist/assets/files/'))
+}
+
 function javascript() {
     return src(javascriptFiles)
         .pipe(plumber({
@@ -102,6 +108,7 @@ const build = series(
         series(buildPug),
         buildSass,
         image,
+        files,
         javascript,
     )
 );
