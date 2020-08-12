@@ -10,8 +10,8 @@ const
     autoprefixer = require('gulp-autoprefixer'),
     data = require('gulp-data')
 
-    /*-----------DEVELOPMENT----------------*/
-    notify = require('gulp-notify'),
+/*-----------DEVELOPMENT----------------*/
+notify = require('gulp-notify'),
     browserSync = require('browser-sync').create(),
 
     /*--------------PRODUCTION---------------*/
@@ -26,7 +26,7 @@ const pagesFiles = ['src/pages/**/*.pug']
 const templatesFiles = ["./src/templates/**/*.pug"];
 const imageFiles = ["src/images/**/*"];
 const javascriptFiles = ["src/js/**/*.js"];
-const otherFiles =  ["src/files/**/*"];
+const otherFiles = ["src/files/**/*"];
 
 const isLive = process.env.NODE_ENV === 'live';
 
@@ -36,7 +36,9 @@ function buildPug() {
             errorHandler: notify.onError() // error handler has each next stream
         }))
         .pipe(gulpIf(!isLive, sourcemaps.init()))
-        .pipe(data(file =>  { require }))
+        .pipe(data(file => {
+            require
+        }))
         .pipe(pug())
         .pipe(htmlmin())
         .pipe(gulpIf(!isLive, sourcemaps.write()))
@@ -57,7 +59,7 @@ function buildSass() {
         .pipe(gulpIf(!isLive, sourcemaps.write()))
         .pipe(dest('dist/assets/css/'))
         .pipe(gulpIf(isLive, rev.manifest('css.json')))
-        .pipe(gulpIf(isLive,dest('manifest')))
+        .pipe(gulpIf(isLive, dest('manifest')))
 }
 
 function image() {
@@ -67,8 +69,8 @@ function image() {
         .pipe(dest('./dist/assets/images/'))
 }
 
-function files(){
-    return src(files)
+function files() {
+    return src(otherFiles)
         .pipe(dest('./dist/assets/files/'))
 }
 
