@@ -1,0 +1,6 @@
+div.container.justify-content
+    div.project__gallery
+        if project.imagesTitle
+            p=project.imagesTitle
+        each image in project.images
+            img(src=`${image}` alt="Application")

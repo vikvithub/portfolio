@@ -1,0 +1,24 @@
+.contact{
+  & .summary__title{
+    text-transform: lowercase;
+    font-size: 6.5em;
+  }
+
+  & .summary__label{
+    font-size: 1em;
+  }
+}
+
+.footer{
+  background: #323232;
+
+  &__link,
+  &__link:visited,
+  &__link:active,
+  &__link:hover{
+    font-size: 2.25em;
+    padding: 3em 1em;
+    color: $color-text-light;
+  }
+
+}

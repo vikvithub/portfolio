@@ -1,0 +1,59 @@
+.container{
+  max-width: 1032px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.justify-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-start{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+
+  &::after {
+    content: '';
+  }
+}
+
+.no-wrap{
+  flex-wrap: nowrap;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+
+  &__nav{
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  &__logo{
+    font-size: 24px;
+  }
+}
+
+.menu {
+  padding: 2em 0 1.5em;
+  &__link {
+    padding: 1.25em;
+  }
+}
+
+.main__activities{
+  padding-bottom: 2em;
+}

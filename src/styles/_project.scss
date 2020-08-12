@@ -1,0 +1,142 @@
+.project{
+  &__gallery{
+    margin-bottom: 4em;
+    width: 100%;
+    text-align: center;
+    padding: 2.5em;
+    background: var(--main-color);
+    color: $color-text-light;
+    font-size: 1.25em;
+    line-height: 4em;
+  }
+
+  &__gallery > *{
+    width: 50%;
+  }
+
+  &__gallery--secondary{
+    background: var(--secondary-color);
+  }
+
+  &__hero{
+    width: 100%;
+    min-height: 545px;
+    background-image: var(--hero-img-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__activities{
+    padding: 5em 0;
+  }
+
+  &__activities .activities__title{
+    margin: 0 0 2em;
+    text-align: left;
+  }
+
+  &__prototype{
+    padding: 5em 0;
+  }
+}
+
+.summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 0;
+
+  &__title{
+    font-size: 92px;
+    text-transform: capitalize;
+    letter-spacing: 0.015em;
+    font-weight: bold;
+  }
+  &__subtitle{
+    font-size: 32px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.about{
+  padding: 10em 0;
+
+  &__title{
+    max-width: 35%;
+    font-size: 32px;
+    align-self: flex-start;
+  }
+
+  &__text{
+    max-width: 455px;
+
+  }
+}
+
+.next{
+  display: block;
+  background: var(--next-color);
+  text-align: center;
+  padding: 2em;
+
+  &__title{
+    @include stroke(1, $color-text-light );
+    color: var(--next-color);
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+  }
+
+  &__subtitle{
+    color: $color-text-light;
+  }
+}
+
+.testemonials{
+  width: 100%;
+  padding: 12em 0;
+  background: var(--main-color);
+  color: $color-text-light;
+  font-size: 1em;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+
+  &__quote,
+  &__author{
+    display: block;
+    max-width: 330px;
+    margin: 0 auto;
+
+  }
+  &__author{
+    text-decoration: underline;
+  }
+}
+
+.bullet-points{
+  padding: 5em;
+
+  &__title{
+    width: 100%;
+    margin: 1em auto;
+    font-family: $font-family-main;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  &__icons{
+    width: 75%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img{
+
+  }
+
+  &__text{
+
+  }
+}

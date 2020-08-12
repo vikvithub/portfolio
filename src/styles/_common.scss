@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+a,
+a:visited,
+a:hover,
+a:active{
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+  background: $color-bg-main;
+  font-family: $font-family-secondary;
+  letter-spacing: 0.015em;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: $font-family-main;
+}
+
+h1 {
+  font-size: 10em;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+img{
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-family: $font-family-main;
+    font-weight: bold;
+  }
+
+  &__subtext {
+    font-family: $font-family-secondary;
+    font-size: 16px;
+  }
+
+  &__icon{
+    width: 2em;
+    height: 1.75em;
+    padding: 0.25em;
+  }
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(51, 37, 16, 0) 71.35%, rgba(7, 5, 3, 0.7) 100%), #323232;
+  padding: 1em 0.5em 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &__text {
+    color: $color-text-light;
+    margin: 0 -0.5em ;
+    padding: 0.15em 0;
+  }
+}

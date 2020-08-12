@@ -1,0 +1,40 @@
+.bio {
+  padding: 4em 0;
+
+  &__image {
+    position: relative;
+  }
+
+  &__image-desc {
+    position: absolute;
+    padding: 0.7em 1.5em;
+    top: -1em;
+    left: -0.5em;
+    font-family: $font-family-main;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0.015em;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+  }
+
+  &__summary{
+    position: absolute;
+    width: 536px;
+    top: 50%;
+    background: #ffffff;
+    padding: 2em 4em;
+    left: -7em;
+  }
+
+  &__contact{
+    margin:  1em 3em;
+    width: 536px;
+    position: absolute;
+    bottom: 0;
+  }
+}
