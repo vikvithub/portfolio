@@ -2,6 +2,10 @@
   max-width: 1032px;
   width: 90%;
   margin: 0 auto;
+
+  &--header{
+    padding: 2.7em 0 1.7em;
+  }
 }
 
 .justify-content{
@@ -23,7 +27,9 @@
 
 .wrap{
   flex-wrap: wrap;
+}
 
+.flex-after{
   &::after {
     content: '';
   }
@@ -48,9 +54,12 @@
 }
 
 .menu {
-  padding: 2em 0 1.5em;
   &__link {
-    padding: 1.25em;
+    padding: 1.5em;
+    line-height: 2em;
+  }
+  &__link:last-child{
+    padding-right: 0;
   }
 }
 
