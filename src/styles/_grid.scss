@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.align-flex-end{
+  align-items: flex-end;
+}
+
 .justify-start{
   display: flex;
   justify-content: flex-start;
@@ -55,11 +59,12 @@
 
 .menu {
   &__link {
-    padding: 1.5em;
+    margin: 1.5em;
     line-height: 2em;
+    position: relative;
   }
   &__link:last-child{
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 

@@ -1,9 +1,11 @@
 .steps {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+  line-height: 1.5;
 
   &__item {
-    flex-basis: 300px
+    flex-basis: 330px;
   }
 
   &__text {
@@ -11,6 +13,7 @@
     line-height: 1.75;
     letter-spacing: 0.015em;
     text-align: left;
+    margin-bottom: 10px;
   }
 
   &__text :first-child{

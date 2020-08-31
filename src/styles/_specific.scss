@@ -1,0 +1,88 @@
+.np{
+  .about{
+    padding-bottom: 14em;
+  }
+
+  .project__gallery{
+    margin-bottom: 5em;
+  }
+
+  .project__gallery--secondary > :last-child{
+    width:80% ;
+    padding-bottom: 2em;
+  }
+
+  .project__gallery>* {
+    margin: 0 auto;
+    width: 86%;
+  }
+}
+
+.sos{
+
+  .project__hero{
+    background-position: center center;
+
+  }
+
+  .project__gallery{
+    margin-bottom: 4em;
+  }
+
+  .bullet-points{
+    padding: 9em 4em;
+  }
+
+  .project__about--secondary{
+    padding: 13em 0 22em;
+  }
+
+}
+
+.wave{
+  .project__gallery{
+    padding: 6em 0;
+  }
+
+  .project__gallery>* {
+    margin: 0 auto;
+    width: 72%;
+  }
+
+  .project__about--secondary{
+    padding: 19em 0 20em;
+  }
+
+  .testemonials{
+    padding: 11em 0;
+  }
+
+  .project__prototype{
+    padding: 8em 0 11em;
+  }
+
+}
+
+.tours{
+  .project__gallery{
+    padding: 6em 0;
+    margin-bottom: 6em;
+  }
+
+  .project__gallery--secondary{
+    margin-bottom: 5em;
+  }
+
+  .project__gallery>* {
+    margin: 0 auto;
+    width: 72%;
+  }
+
+  .testemonials{
+    padding: 12em 0 ;
+  }
+
+  .project__prototype{
+    padding: 9em 0 4em;
+  }
+}

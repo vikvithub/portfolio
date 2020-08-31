@@ -1,6 +1,5 @@
 .project{
   &__gallery{
-    margin-bottom: 4em;
     width: 100%;
     text-align: center;
     padding: 2.5em;
@@ -27,7 +26,8 @@
   }
 
   &__activities{
-    padding: 5em 0;
+    padding: 7em 0 9em;
+    letter-spacing: 0.015em;
   }
 
   &__activities .activities__title{
@@ -35,8 +35,8 @@
     text-align: left;
   }
 
-  &__prototype{
-    padding: 5em 0;
+  &__prototype {
+    padding: 10em 0 6em;
   }
 }
 
@@ -44,22 +44,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5em 0;
+  padding: 6em 0 12em;
 
   &__title{
     font-size: 92px;
-    text-transform: capitalize;
     letter-spacing: 0.015em;
     font-weight: bold;
+    text-transform: none;
   }
   &__subtitle{
     font-size: 32px;
     letter-spacing: 0.01em;
   }
+
+  &__lists{
+    text-align: right;
+  }
+
+
+  &__list-item{
+    line-height: 2;
+  }
 }
 
 .about{
-  padding: 10em 0;
+  padding: 22em 0 11em;
 
   &__title{
     max-width: 35%;
@@ -68,7 +77,8 @@
   }
 
   &__text{
-    max-width: 455px;
+    line-height: 2;
+    max-width: 420px;
 
   }
 }
@@ -77,8 +87,7 @@
   display: block;
   background: var(--next-color);
   text-align: center;
-  padding: 2em;
-
+  padding: 11em;
   &__title{
     @include stroke(1, $color-text-light );
     color: var(--next-color);
@@ -94,7 +103,7 @@
 
 .testemonials{
   width: 100%;
-  padding: 12em 0;
+  padding: 13em 0;
   background: var(--main-color);
   color: $color-text-light;
   font-size: 1em;
@@ -105,7 +114,7 @@
   &__author{
     display: block;
     max-width: 330px;
-    margin: 0 auto;
+    margin: 10px auto;
 
   }
   &__author{
