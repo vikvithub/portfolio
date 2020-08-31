@@ -1,9 +1,11 @@
 .steps {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+  line-height: 1.5;
 
   &__item {
-    flex-basis: 300px
+    flex-basis: 330px;
   }
 
   &__text {
@@ -11,6 +13,7 @@
     line-height: 1.75;
     letter-spacing: 0.015em;
     text-align: left;
+    margin-bottom: 10px;
   }
 
   &__text :first-child{
@@ -20,12 +23,22 @@
   &__title {
     position: relative;
     box-shadow: 0 22px 42px rgba(33, 33, 33, 0.05);
-    padding: 1em;
-    margin-bottom: 1em;
-    text-align: right;
+    padding: 27px 8px 8px;
+    margin-bottom: 1.5em;
+    font-family: $font-family-secondary;
+    text-align: center;
     font-weight: 600;
     font-size: 24px;
+    line-height: 25px;
     z-index: 2;
+  }
+
+  &__item:first-child .steps__title{
+    text-align: right;
+  }
+
+  &__item:last-child .steps__title{
+    text-align: left;
   }
 }
 
@@ -34,7 +47,7 @@
   &__title{
     text-align: center;
     max-width: 680px;
-    margin: 0 auto 2em;
+    margin: 0 auto 1.85em;
     font-family: $font-family-main;
     font-size: 32px;
   }

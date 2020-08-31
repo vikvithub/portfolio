@@ -39,6 +39,7 @@ img{
 .logo {
   display: flex;
   align-items: center;
+  line-height: 1;
 
   &__text {
     font-family: $font-family-main;
@@ -46,26 +47,42 @@ img{
   }
 
   &__subtext {
+    text-transform: capitalize;
     font-family: $font-family-secondary;
     font-size: 16px;
   }
 
   &__icon{
-    width: 2em;
-    height: 1.75em;
-    padding: 0.25em;
+    width: 1.25em;
+    height: 1.25em;
+    padding: 0 0.25em;
   }
 }
 
 .banner {
   background: linear-gradient(180deg, rgba(51, 37, 16, 0) 71.35%, rgba(7, 5, 3, 0.7) 100%), #323232;
-  padding: 1em 0.5em 0;
   overflow: hidden;
   white-space: nowrap;
 
   &__text {
     color: $color-text-light;
-    margin: 0 -0.5em ;
-    padding: 0.15em 0;
+    margin: 0 -0.5em;
+    padding: 0.1em 0;
+    word-spacing: .5em;
   }
 }
+
+.animation-wave {
+  padding-bottom: 0.2rem
+}
+
+.animation-wave:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+

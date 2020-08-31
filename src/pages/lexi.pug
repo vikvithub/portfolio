@@ -2,13 +2,13 @@
     let pageTitle = 'My portfolio: Lexi';
     let project = {
         title: 'Lexi',
-        summarySubtitle: 'Free mobile applicationi',
+        summarySubtitle: 'Free mobile application',
         summaryList: ['illistrations', 'ux/ui design', 'brand strategy'],
         about: {
             title: 'About application',
-            text: 'The mobile application is called Lexi and will help users to study words at its MVP stage.' +
-                    'After depending on demand it will most likely evolve into content aggregator with possible' +
-                    ' grammar lessons.'
+            text: 'The mobile application is called Lexi and will help users to study words at its MVP stage. '+
+                    'After depending on demand it will most likely evolve into content aggregator with possible'+
+                    'grammar lessons.'
         },
         images: [
             './assets/images/img.lexi.2.png',
@@ -102,7 +102,7 @@ head
 body
     include ../templates/header
     main(id='content')
-        section.project
+        section.project.lexi
             include ../templates/project-header
             include ../templates/project-hero
             include ../templates/project-about
