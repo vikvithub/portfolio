@@ -1,8 +1,11 @@
 header.project__header.summary
     div.container.justify-content.align-flex-end
-        div
+        div.gsap-moving-right
             h1.summary__title=project.title
             p.summary__subtitle=project.summarySubtitle
-        ul.summary__lists
+        ul.summary__lists.gsap-moving-right
+            if project.link
+                li.summary__list-item.summary__list-item--link
+                    a(href=project.link.url)=project.link.label
             each item in project.summaryList
                 li.summary__list-item=item

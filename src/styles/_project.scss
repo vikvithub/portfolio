@@ -65,6 +65,10 @@
   &__list-item{
     line-height: 2;
   }
+
+  &__list-item--link{
+    text-decoration: underline;
+  }
 }
 
 .about{
@@ -139,13 +143,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__img{
-
-  }
-
-  &__text{
-
   }
 }

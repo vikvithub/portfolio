@@ -27,6 +27,11 @@
 
   .project__gallery{
     margin-bottom: 4em;
+
+    &>img{
+      margin-top: 2em;
+      width: 40%;
+    }
   }
 
   .bullet-points{
