@@ -1,4 +1,8 @@
 .bio {
+  & a:hover {
+    color: #FFB803
+  }
+
   padding: 4em 0;
 
   &__image {

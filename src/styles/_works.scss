@@ -1,6 +1,10 @@
 .works {
   margin: 1.5em 0;
 
+  & a:hover {
+    color: #FFB803
+  }
+
   &__block{
     align-self: flex-end;
     display: flex;

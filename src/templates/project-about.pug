@@ -1,4 +1,6 @@
 section.project__about.about
     div.container.justify-content
         h2.about__title.gsap-moving-corner=project.about.title
-        p.about__text.gsap-moving-corner=project.about.text
+        div.about__text.gsap-moving-corner
+            each text in project.about.text
+                p=text

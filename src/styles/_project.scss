@@ -1,4 +1,7 @@
 .project{
+  & a:hover {
+    color: #FFB803
+  }
   &__gallery{
     width: 100%;
     text-align: center;
@@ -88,16 +91,29 @@
 }
 
 .next{
-  display: block;
+  height: 100vh;
   background: var(--next-color);
   text-align: center;
-  padding: 11em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__title{
+    text-transform: none;
     @include stroke(1, $color-text-light );
-    color: var(--next-color);
-    text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.015em;
+    font-size: 10em;
+    font-weight: normal;
+    font-family: $font-family-main;
+    pointer-events: visible;
+  }
+
+  &__title span{
+    color: var(--next-color);
+  }
+
+  &__title:hover{
+    color: inherit;
   }
 
   &__subtitle{
