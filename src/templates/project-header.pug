@@ -6,6 +6,6 @@ header.project__header.summary
         ul.summary__lists.gsap-moving-right
             if project.link
                 li.summary__list-item.summary__list-item--link
-                    a(href=project.link.url)=project.link.label
+                    a(href=project.link.url target="_blank")=project.link.label
             each item in project.summaryList
                 li.summary__list-item=item

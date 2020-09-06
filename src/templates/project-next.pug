@@ -1,3 +1,14 @@
-a.next(href=`${project.next.link}`)
-    h1.next__title=project.next.text
-    p.next__subtitle work
+div.next
+    div.next__heading
+        a.next__title(href=`${project.next.link}` target="_blank" data-next=project.next.textNext id='to_next_proj')
+            each letter in project.next.text
+                span=letter
+        p.next__subtitle
+            span(id='nom_project')
+                span.stag n
+                span.stag e
+                span.stag x
+                span.stag t
+                span.stag
+                |
+            |work
