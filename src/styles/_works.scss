@@ -80,6 +80,7 @@
   background: linear-gradient(180deg, rgba(169, 34, 150, 0.31) 53.12%, #990383 100%), #B7099E;
   border-radius: 50%;
   margin: unset;
+  overflow: visible;
 
   &::after {
     content: '';
