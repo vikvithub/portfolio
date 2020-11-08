@@ -1,23 +1,66 @@
 .banner{
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
-  height: 15em;
+  width: 100%;
+  height: 85vh;
+  background-color: $color-primary;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
-  & div {
+  &__text {
+    display: block;
+    width: 275px;
+    height: auto;
+    margin: 170px auto 65px;
+    color: $color-text-light;
+    font-family: $font-family-main;
+    font-size: 32px;
+    line-height: 147%;
+    letter-spacing: 0.015em;
+  }
+
+  &__figure{
+    width: 152px;
+    margin: auto;
+    margin-bottom: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__figure-main{
+    width: 64px;
+    height: 64px;
+    background-color: $color-secondary;
+    border-radius: 50%;
+  }
+  &__figure-secondary{
+    width: 100%;
+    cursor: pointer;
     position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 32s linear infinite;
-  }
+    top: 50%;
 
-  & h1 {
-    float: left;
-  }
+    .half{
+      width: 50%;
+    }
 
-}
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+    .wave{
+      width: 100%;
+      height: 6px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E%3C/style%3E%3Cpath fill='none' stroke='%23f6f6f6' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: 15%;
+      border-bottom: 0;
+      padding-bottom: 2px;
+      text-decoration: none;
+    }
+
+    &:hover .wave{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .7s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23f6f6f6' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    }
+  }
 }

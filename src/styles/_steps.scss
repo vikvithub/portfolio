@@ -43,6 +43,8 @@
 }
 
 .activities{
+  padding: 140px 0;
+  background: $color-bg-secondary;
 
   &__title{
     text-align: center;
@@ -50,6 +52,10 @@
     margin: 0 auto 1.85em;
     font-family: $font-family-main;
     font-size: 32px;
+  }
+
+  &__steps{
+
   }
 }
 

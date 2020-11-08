@@ -46,6 +46,7 @@
 .page-header{
   display: flex;
   justify-content: space-between;
+  background-color: $color-primary;
 
   &__nav{
     display: inline-block;

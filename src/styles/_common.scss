@@ -44,31 +44,13 @@ img{
   &__text {
     font-family: $font-family-main;
     font-weight: bold;
-  }
-
-  &__subtext {
-    text-transform: capitalize;
-    font-family: $font-family-secondary;
-    font-size: 16px;
+    color: $color-text-light;
   }
 
   &__icon{
     width: 1.25em;
     height: 1.25em;
     padding: 0 0.25em;
-  }
-}
-
-.banner {
-  background: linear-gradient(180deg, rgba(51, 37, 16, 0) 71.35%, rgba(7, 5, 3, 0.7) 100%), #323232;
-  overflow: hidden;
-  white-space: nowrap;
-
-  &__text {
-    color: $color-text-light;
-    margin: 0 -0.5em;
-    padding: 0.1em 0;
-    word-spacing: .5em;
   }
 }
 
@@ -84,5 +66,70 @@ img{
   border-bottom: 0;
   padding-bottom: 2px;
   text-decoration: none;
+}
+
+
+.goal{
+  &__desc{
+    width: 440px;
+    h2{
+      font-size: 32px;
+      line-height: 25px;
+      margin-bottom: 1em;
+    }
+
+    p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  &__figures{
+    width: 464px;
+    height: 500px;
+    position: relative;
+  }
+
+  .circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    div{
+      width: fit-content;
+      margin: auto;
+      color: inherit;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 25px;
+      /* identical to box height, or 78% */
+
+      letter-spacing: 0.015em;
+    }
+  }
+
+  .circle--green{
+    top:0;
+    color: $color-text-light;
+    background-color: $color-primary;
+    border: 1px colid $color-primary;
+  }
+  .circle--transparent{
+    bottom: 45px;
+    right: 0;
+    position: absolute;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+  }
+  .circle--small{
+    width: 64px;
+    height: 64px;
+    right: 0;
+    background-color: $color-secondary;
+  }
 }
 
