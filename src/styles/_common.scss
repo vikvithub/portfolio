@@ -68,14 +68,31 @@ img{
   text-decoration: none;
 }
 
+.resume,
+.resume:visited,
+.resume:hover {
+  font-size: 32px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $color-secondary;
+  margin-bottom: -5px;
+}
+
 
 .goal{
+  padding-bottom: 140px;
   &__desc{
-    width: 440px;
+    width: 460px;
     h2{
       font-size: 32px;
       line-height: 25px;
       margin-bottom: 1em;
+    }
+
+    .bigger{
+      font-size: 24px;
+      padding-bottom: 10px;
     }
 
     p{
