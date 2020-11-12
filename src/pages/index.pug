@@ -1,16 +1,17 @@
 -let pageTitle = 'My portfolio';
--let bannerTitle = ' Portfolio Portfolio Portfolio Portfolio Portfolio Portfolio';
-
-DOCTYPE(html)
-html(lang="en")
-head
-    include ../templates/head
-body
-    include ../templates/header
-    main(id='content')
-        include ../templates/hero
-        include ../templates/bio
-        include ../templates/goal
-        include ../templates/activities
+-let is_homepage = true;
+doctype html
+html
+    head
+        include ../templates/head
+    body.homepage
+            include ../templates/header
+            main(id='content')
+                include ../templates/hero
+                include ../templates/bio
+                include ../templates/goal
+                include ../templates/activities
+                include ../templates/works
+                include ../templates/contact
 
 

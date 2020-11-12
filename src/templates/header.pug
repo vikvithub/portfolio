@@ -2,11 +2,16 @@ header.page-header
     div.container.justify-content.container--header
         a(href='./')
             span.page-header__logo.logo
-                img.logo__icon(src="./assets/images/icon-main.svg")
-                div
-                    p.logo__text UX/UI
+                if is_homepage
+                    img.logo__icon(src="./assets/images/icon-main-inverted.svg")
+                    div
+                        p.logo__text UX/UI
+                else
+                    img.logo__icon(src="./assets/images/icon-main.svg")
+                    div
+                        p.logo__text UX/UI
         nav.page-header__nav.menu
             a.menu__link.animation-wave(href="./" target="_blank") Home
-            a.menu__link.animation-wave(href="#about" target="_blank") About me
-            a.menu__link.animation-wave(href="/works.html" target="_blank") Works
-            a.menu__link.animation-wave(href="./contact.html" target="_blank") Contact
+            a.menu__link.animation-wave(href="/#about" target="_blank") About me
+            a.menu__link.animation-wave(href="/#works" target="_blank") Works
+            a.menu__link.animation-wave(href="/#contact" target="_blank") Contact
