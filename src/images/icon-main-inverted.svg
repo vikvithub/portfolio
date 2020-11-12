@@ -1,7 +1,7 @@
 <svg width="50" height="50" viewBox="50 15 11.5 30" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d)">
-        <rect width="9.66208" height="9.66208" transform="matrix(-0.724483 0.689293 -0.724483 -0.689293 70 26.66)" fill="#323232"/>
-        <rect width="9.66208" height="9.66208" transform="matrix(-0.724483 0.689293 -0.724483 -0.689293 56 26.7)" fill="#323232"/>
+        <rect width="9.66208" height="9.66208" transform="matrix(-0.724483 0.689293 -0.724483 -0.689293 70 26.66)" fill="#f6f6f6"/>
+        <rect width="9.66208" height="9.66208" transform="matrix(-0.724483 0.689293 -0.724483 -0.689293 56 26.7)" fill="#f6f6f6"/>
         <rect width="9.66208" height="9.66208" transform="matrix(-0.724483 0.689293 -0.724483 -0.689293 63.021 33.34)" fill="#FFB803"/>
     </g>
     <defs>

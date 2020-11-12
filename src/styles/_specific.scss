@@ -1,3 +1,28 @@
+.homepage {
+  .page-header {
+    background-color: $color-primary;
+  }
+
+  .menu {
+    color: $color-bg-main;
+  }
+
+  .logo {
+    color: $color-text-light;
+  }
+
+  #icon-main {
+    width: 17.5px;
+    height: 17.5px;
+
+    #rect {
+      fill: #F6F6F6;
+    }
+  }
+
+}
+
+
 .lexi {
   .project__gallery > img {
     margin-top: 2em;
@@ -5,96 +30,104 @@
   }
 }
 
-.np{
-  .about{
+.np {
+  .about {
     padding-bottom: 14em;
   }
 
-  .project__gallery{
+  .project__gallery {
     margin-bottom: 5em;
   }
 
-  .project__gallery--secondary > :last-child{
-    width:80% ;
+  .project__gallery--secondary > :last-child {
+    width: 80%;
     padding-bottom: 2em;
   }
 
-  .project__gallery>* {
+  .project__gallery > * {
     margin: 0 auto;
     width: 86%;
   }
 }
 
-.sos{
+.sos {
 
-  .project__hero{
+  .project__hero {
     background-position: center center;
 
   }
 
-  .project__gallery{
+  .project__gallery {
     margin-bottom: 4em;
 
-    &>img{
+    & > img {
       margin-top: 2em;
       width: 40%;
     }
   }
 
-  .bullet-points{
+  .bullet-points {
     padding: 9em 4em;
   }
 
-  .project__about--secondary{
+  .project__about--secondary {
     padding: 13em 0 22em;
   }
 
 }
 
-.wave{
-  .project__gallery{
+.wave {
+  .project__gallery {
     padding: 6em 0;
   }
 
-  .project__gallery>* {
+  .project__gallery > * {
     margin: 0 auto;
     width: 72%;
   }
 
-  .project__about--secondary{
+  .project__about--secondary {
     padding: 19em 0 20em;
   }
 
-  .testemonials{
+  .testemonials {
     padding: 11em 0;
   }
 
-  .project__prototype{
+  .project__prototype {
     padding: 8em 0 11em;
+  }
+
+  .about{
+    .about__text{
+      p:nth-child(2){
+        width: 425px;
+      }
+    }
   }
 
 }
 
-.tours{
-  .project__gallery{
+.tours {
+  .project__gallery {
     padding: 6em 0;
     margin-bottom: 6em;
   }
 
-  .project__gallery--secondary{
+  .project__gallery--secondary {
     margin-bottom: 5em;
   }
 
-  .project__gallery>* {
+  .project__gallery > * {
     margin: 0 auto;
     width: 72%;
   }
 
-  .testemonials{
-    padding: 12em 0 ;
+  .testemonials {
+    padding: 12em 0;
   }
 
-  .project__prototype{
+  .project__prototype {
     padding: 9em 0 4em;
   }
 }

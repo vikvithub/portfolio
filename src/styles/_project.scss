@@ -66,11 +66,17 @@
 
 
   &__list-item{
+    font-size: 18px;
     line-height: 2;
   }
 
   &__list-item--link{
-    text-decoration: underline;
+    text-decoration: none;
+    color: $color-secondary;
+
+    &:hover a{
+      color: $color-primary;
+    }
   }
 }
 
@@ -84,8 +90,12 @@
   }
 
   &__text{
-    line-height: 2;
+    line-height: 1.5;
     max-width: 420px;
+    font-size: 18px;
+    p:first-child{
+      padding-bottom: 10px;
+    }
 
   }
 }
@@ -135,6 +145,8 @@
     display: block;
     max-width: 330px;
     margin: 10px auto;
+    line-height: 1.5;
+    font-size: 18px;
 
   }
   &__author{
