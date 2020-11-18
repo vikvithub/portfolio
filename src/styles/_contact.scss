@@ -9,6 +9,10 @@
     font-family: $font-family-main;
     font-size: 6.5em;
     color: $color-secondary;
+
+    &:hover{
+      color: $color-primary;
+    }
   }
 
   & .summary__label{
