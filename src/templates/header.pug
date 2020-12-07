@@ -11,7 +11,12 @@ header.page-header
                     div
                         p.logo__text UX/UI
         nav.page-header__nav.menu
-            a.menu__link.animation-wave(href="./" target="_blank") Home
-            a.menu__link.animation-wave(href="/#about" target="_blank") About me
-            a.menu__link.animation-wave(href="/#works" target="_blank") Works
-            a.menu__link.animation-wave(href="/#contact" target="_blank") Contact
+            a.menu__link.animation-wave(href="./" ) Home
+            if is_homepage
+                a.menu__link.animation-wave(href="#about") About me
+                a.menu__link.animation-wave(href="#works") Works
+                a.menu__link.animation-wave(href="#contact") Contact
+            else
+                a.menu__link.animation-wave(href="./#about" target="_blank") About me
+                a.menu__link.animation-wave(href="./#works" target="_blank") Works
+                a.menu__link.animation-wave(href="./#contact" target="_blank") Contact
